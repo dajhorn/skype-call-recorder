@@ -1,0 +1,17 @@
+Index: skype-call-recorder-0.8/CMakeLists.txt
+===================================================================
+--- skype-call-recorder-0.8.orig/CMakeLists.txt	2011-03-06 19:33:05.900400362 -0600
++++ skype-call-recorder-0.8/CMakeLists.txt	2011-03-06 19:34:24.960400363 -0600
+@@ -88,6 +88,12 @@
+ QT4_ADD_RESOURCES(RESOURCES_SOURCES ${RESOURCES})
+ SET(SOURCES ${SOURCES} ${MOC_SOURCES} ${RESOURCES_SOURCES})
+ 
++# DSO linking fix
++
++if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
++	set(LIBRARIES ${LIBRARIES} -lvorbis -logg)
++endif()
++
+ # main target
+ 
+ ADD_EXECUTABLE(${TARGET} ${SOURCES})

@@ -1,0 +1,15 @@
+Source: skype-call-recorder
+Section: contrib/net
+Priority: optional
+Maintainer: Jean-Luc Herren <jlh@gmx.ch>
+Build-Depends: cdbs, debhelper (>= 7.0.50~), cmake, libqt4-dev, libmp3lame-dev, libid3-3.8.3-dev, libvorbis-dev, libdbus-1-dev, quilt
+Standards-Version: 3.8.4
+Homepage: http://atdot.ch/scr/
+
+Package: skype-call-recorder
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: skype (>= 2)
+Description: Record Skype Calls
+ Skype Call Recorder allows you to record Skype calls to MP3, Ogg Vorbis or WAV files.
+ It uses the native Skype API and runs in the system tray.

@@ -1,0 +1,6 @@
+?package(skype-call-recorder): \
+  needs="X11" \
+  title="Skype Call Recorder" \
+  section="Applications/Network/Communication" \
+  command="/usr/bin/skype-call-recorder" \
+  icon="/usr/share/icons/hicolor/128x128/apps/skype-call-recorder.png"

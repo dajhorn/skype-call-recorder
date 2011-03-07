@@ -1,0 +1,20 @@
+skype-call-recorder (0.8+git.1-0ubuntu1) unstable; urgency=low
+
+  * Initial git-buildpackage packaging.
+  * Merge with upstream head.
+
+ -- Darik Horn <dajhorn@vanadac.com>  Sun, 06 Mar 2011 20:21:41 -0600
+
+skype-call-recorder (0.8-0ubuntu2) unstable; urgency=low
+
+  * Add natty-dso-linking.patch that explicitly links libogg and libvorbis.
+
+ -- Darik Horn <dajhorn@vanadac.com>  Sun, 06 Mar 2011 19:37:08 -0600
+
+skype-call-recorder (0.8-0ubuntu1) unstable; urgency=low
+
+  * Debianize using dh_make.
+  * Change the desktop category to that of the Skype partner package
+    so that Skype Call Recorder appears in the Internet menu.
+
+ -- Darik Horn <dajhorn@vanadac.com>  Sat, 30 Oct 2010 12:50:58 -0500
